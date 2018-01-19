@@ -1,0 +1,27 @@
+#fotoArticulo{
+	width:100px; 
+	height : 100px;
+}
+
+.jumbotron{
+	background-image: url("/Images/headerBackground.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: #000000;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.navbar{
+	margin-bottom: 50px;
+	border-radius: 0px;
+}
+
+.img-responsive{
+	width: 100%;
+}
+
+.productTitle{
+	color: #FFFFFF;
+	font-size: 20px;
+}
