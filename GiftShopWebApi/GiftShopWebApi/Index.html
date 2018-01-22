@@ -11,9 +11,12 @@
 
 <body ng-app="mainApp">
     <!-- Angular/JS Links -->
-    <script src="/Scripts/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
     <script src="/Scripts/app/mainApp.js"></script>
-    <script src="/Scripts/app/productModule.js" )"></script>
+    <script src="/Scripts/app/component/product-component/product-component.js"></script>
 
     <!-- Header of the index page -->
     <div class="jumbotron">
@@ -52,20 +55,7 @@
         </nav>
     </div>
 
-    <!-- Main div, where every item will be shown -->
-    <div id="main" ng-controller="productCtrl as product">
-        <div class="container">
-            <div class="row">
-                <div ng-repeat="product in product.products | orderBy: 'cantidad'" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading"><a href="../product/{{product.ProductID}}"><span class="productTitle">{{product.Name}}</span></a></div>
-                        <div class="panel-body"><img ng-src="" class="img-responsive" alt="Image"></div>
-                        <div class="panel-footer">{{product.price}}</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <product-component></product-component>
 
     <!-- Footer of the page -->
     <div id="footer">

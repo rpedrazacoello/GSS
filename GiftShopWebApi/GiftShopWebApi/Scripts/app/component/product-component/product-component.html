@@ -1,0 +1,21 @@
+﻿<div class="container">
+    <input type="text" ng-model=currentPage />
+    <input type="text" ng-model=itemsPerPage />
+    <button ng-click=productCtrl.send()>Enviar</button>
+    <div class="row">
+        <div ng-repeat="product in productCtrl.products | orderBy: 'quantity'" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><a href="../product/{{product.ProductID}}"><span class="productTitle">{{product.Name}}</span></a></div>
+                <div class="panel-body"><img ng-src="" class="img-responsive" alt="Image"></div>
+                <div class="panel-footer">{{product.price}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pagination -->
+
+<div>
+
+    <ul uib-pagination total-items="productCtrl.totalItems" ng-model="currentPage" ng-change="productCtrl.pageChanged()"></ul>
+</div>

@@ -1,6 +1,6 @@
 /*Angular Modules take a name, best practice is lowerCamelCase, and a list of dependancies*/
 /*added the second module as a dependancy */
-angular.module('mainApp', ['productModule'])
+angular.module('mainApp', ['productComponent', 'ui.bootstrap'])
 .config([function () {
 	
 	/* Configuration is where you configure providers ( not instances)*/
