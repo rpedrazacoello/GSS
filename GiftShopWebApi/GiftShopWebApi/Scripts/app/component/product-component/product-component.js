@@ -1,7 +1,9 @@
 ﻿angular.module('productComponent', ['ngAnimate'])
+    .value('$routerRootComponent', 'myApp')
 .component('productComponent', {
     templateUrl: 'Scripts/app/component/product-component/product-component.html',
     controllerAs: 'productCtrl',
+    $routeConfig: [{path: '/test/...', name: 'productDetail', component: 'productDetailComponent'}],
     controller: function ($http, $scope, $log) {
 
         $scope.itemsPerPage = 6;
@@ -44,4 +46,4 @@
         this.bigTotalItems = 175;
         this.bigCurrentPage = 1;
     }
-});
+})

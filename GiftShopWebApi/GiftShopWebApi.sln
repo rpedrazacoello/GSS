@@ -7,6 +7,28 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiftShopWebApi", "GiftShopW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiftShopWebApi.Tests", "GiftShopWebApi.Tests\GiftShopWebApi.Tests.csproj", "{C83CEEE0-3137-4A2F-84F1-3C62FF2902BF}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSite", "http://localhost:58004", "{759AA9DC-092F-43D5-8B4E-BD534E3FF27E}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_58004"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\Visual Studio 2013\WebSites\WebSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58004\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_58004"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\Visual Studio 2013\WebSites\WebSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58004\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\..\..\Visual Studio 2013\WebSites\WebSite\"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +43,10 @@ Global
 		{C83CEEE0-3137-4A2F-84F1-3C62FF2902BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C83CEEE0-3137-4A2F-84F1-3C62FF2902BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C83CEEE0-3137-4A2F-84F1-3C62FF2902BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{759AA9DC-092F-43D5-8B4E-BD534E3FF27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{759AA9DC-092F-43D5-8B4E-BD534E3FF27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{759AA9DC-092F-43D5-8B4E-BD534E3FF27E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{759AA9DC-092F-43D5-8B4E-BD534E3FF27E}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
